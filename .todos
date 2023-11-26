@@ -1,0 +1,17 @@
+how to setup actix-web with ORM, rustup, 
+
+
+setup step by step "actix-web with diesel ORM (sqlite), seralizers, models, views
+permissions, filters"
+
+
+
+
+[ ] Create User DataBase using diesel ORM
+	signup: () 
+	login : ()
+	logout: ()
+[ ] Group routes
+[ ] Add Permission to routes
+
+
