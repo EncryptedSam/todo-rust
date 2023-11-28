@@ -59,6 +59,8 @@ pub async fn sign_in(pool: web::Data<DbPool>, data: web::Form<SignInData>) -> Ht
             .first::<User>(&mut conn),
     };
 
+    println!("sign-in handler>>>>>>>>>>>");
+
     match user {
         Ok(user) => {
             // Check if the password matches
