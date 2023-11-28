@@ -71,6 +71,7 @@ pub async fn sign_in(pool: web::Data<DbPool>, data: web::Form<SignInData>) -> Ht
             }
         }
         Err(_) => {
+            println!("User not found");
             return HttpResponse::NotFound().body("User not found");
         }
     }
@@ -128,6 +129,7 @@ pub async fn verify_token(_pool: web::Data<DbPool>, token: web::Path<String>) ->
 // }
 
 //-----------------------------------------------------------------------------------------
+
 // pub async fn get_users(pool: web::Data<DbPool>) -> HttpResponse {
 //     let db = Database::new();
 //     let mut conn = pool.get().expect("couldn't get db connection from pool");

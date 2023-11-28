@@ -2,6 +2,7 @@ mod db;
 mod schema;
 mod utils;
 mod v1;
+mod middlewares;
 
 use actix_web::{web, App, HttpServer};
 use db::connection::connection;
